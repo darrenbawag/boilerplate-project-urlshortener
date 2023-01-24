@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/public", express.static("public"));
 
 app.get("/", function (req, res) {
-	res.sendFile(process.cwd() + "/views/index.html");
+	res.sendFile(__dirname + "/views/index.html");
 });
 
 // Your first API endpoint
